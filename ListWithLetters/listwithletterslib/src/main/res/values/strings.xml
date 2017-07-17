@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ListWithLettersLib</string>
+
+    <string name="text_more">More</string>
+    <string name="text_less">Less</string>
+
+    <string name="text_title">Sample Title</string>
+    <string name="text_description">Item description</string>
+    <string name="text_location">Random Location</string>
+    <string name="text_content_h">Content Header</string>
+    <string name="text_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam id vestibulum velit, quis malesuada ex.
+        Aenean rutrum, sem sit amet auctor efficitur, est dui bibendum justo, at interdum ligula justo ac metus.
+        In pretium ipsum ipsum. Curabitur id ex magna. Sed vestibulum massa non velit congue euismod.
+        </string>
+
+    <string name="text_nothing">Nothing</string>
+</resources>

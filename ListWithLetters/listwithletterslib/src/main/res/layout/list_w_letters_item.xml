@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lwl_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lwl_item_rl_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/lwl_item_iv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@android:string/untitled"
+            app:srcCompat="@drawable/digital" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/lwl_item_iv_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/lwl_item_iv_top"
+            android:layout_alignLeft="@id/lwl_item_iv_top"
+            android:layout_alignRight="@id/lwl_item_iv_top"
+            android:layout_alignStart="@id/lwl_item_iv_top"
+            android:layout_alignTop="@id/lwl_item_iv_top"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/text_title"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+
+        <TextView
+            android:id="@+id/lwl_item_iv_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/lwl_item_iv_top"
+            android:layout_alignLeft="@id/lwl_item_iv_top"
+            android:layout_alignRight="@id/lwl_item_iv_top"
+            android:layout_alignStart="@id/lwl_item_iv_top"
+            android:layout_below="@+id/lwl_item_iv_text_title"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@android:string/untitled"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+
+        <TextView
+            android:id="@+id/lwl_item_iv_text_descr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/lwl_item_iv_top"
+            android:layout_alignLeft="@id/lwl_item_iv_top"
+            android:layout_alignRight="@id/lwl_item_iv_top"
+            android:layout_alignStart="@id/lwl_item_iv_top"
+            android:layout_below="@id/lwl_item_iv_text_time"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_description"
+            android:textColor="#ffffff"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+
+        <TextView
+            android:id="@+id/lwl_item_iv_text_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lwl_item_iv_top"
+            android:layout_alignEnd="@id/lwl_item_iv_top"
+            android:layout_alignLeft="@id/lwl_item_iv_top"
+            android:layout_alignRight="@id/lwl_item_iv_top"
+            android:layout_alignStart="@id/lwl_item_iv_top"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:drawableStart="@android:drawable/ic_dialog_map"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="@string/text_location"
+            android:textColor="#ffffff"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lwl_item_tv_cont_h"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_sign"
+        android:drawableStart="@drawable/ic_sign"
+
+        android:gravity="center_vertical"
+        android:text="@string/text_content_h"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lwl_item_rl_top">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lwl_item_tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lwl_item_tv_cont_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/lwl_item_btn_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/text_more"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/lwl_item_btn_less"
+        app:layout_constraintTop_toBottomOf="@+id/lwl_item_tv_content" />
+
+    <Button
+        android:id="@+id/lwl_item_btn_less"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorDarkGrey"
+        android:text="@string/text_less"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@+id/lwl_item_btn_more"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lwl_item_tv_content" />
+
+</android.support.constraint.ConstraintLayout>
